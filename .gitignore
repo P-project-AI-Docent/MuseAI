@@ -1,0 +1,32 @@
+# Models (large)
+clip_base/
+clip_lora/
+bge_safe/
+ko-sroberta-multitask/
+
+# Images (large)
+met20k/
+
+# Indexes (large)
+index_assets/
+index_assets_lora/
+rag_assets/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS junk
+.DS_Store
+
+# Environment
+.env
+*.env
+
+
+nlp/
+backend/
