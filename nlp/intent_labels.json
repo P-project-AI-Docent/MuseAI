@@ -1,0 +1,10 @@
+{
+  "0": "artist_info",
+  "1": "artwork_overview",
+  "2": "date_query",
+  "3": "fallback",
+  "4": "medium_query",
+  "5": "metadata_query",
+  "6": "related_works",
+  "7": "style_context"
+}
