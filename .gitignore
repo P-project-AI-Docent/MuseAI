@@ -28,5 +28,6 @@ __pycache__/
 *.env
 
 
-nlp/
+nlp/*.pt
+nlp/__pycache__/
 backend/
