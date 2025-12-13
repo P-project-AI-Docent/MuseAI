@@ -100,3 +100,11 @@ vosk-model-small-ko-0.22.zip
 *.zip
 
 public/
+
+backend/yolo/
+backend/artworks.db
+
+
+nlp/intent_classifier.pt
+nlp/intent_classifier_best.pt
+backend/yolo/yolov8n.pt
