@@ -96,7 +96,7 @@ frontend/dist/  # 🔥 혹은 root dist/ 이미 있음
 # STT model
 stt/model/
 vosk-model-small-ko-0.22/
-vosk-model-small-ko-0.22.zip
+vosk-model-small-ko-0.22.zipㄴ
 *.zip
 
 public/
