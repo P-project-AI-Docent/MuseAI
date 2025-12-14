@@ -1,33 +1,110 @@
+# -------------------------
 # Models (large)
+# -------------------------
 clip_base/
 clip_lora/
 bge_safe/
 ko-sroberta-multitask/
 
+# -------------------------
 # Images (large)
+# -------------------------
 met20k/
 
+# -------------------------
 # Indexes (large)
+# -------------------------
 index_assets/
 index_assets_lora/
 rag_assets/
 
+# -------------------------
 # Python cache
+# -------------------------
 __pycache__/
 *.pyc
 *.pyo
 
+# -------------------------
 # Notebook checkpoints
+# -------------------------
 .ipynb_checkpoints/
 
+# -------------------------
 # macOS junk
+# -------------------------
 .DS_Store
 
+# -------------------------
 # Environment
+# -------------------------
 .env
-*.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# -------------------------
+# Node modules / builds
+# -------------------------
+node_modules/
+dist/
+build/
+.vite/
+
+# -------------------------
+# Audio (TTS/STT output)
+# -------------------------
+*.wav
+*.mp3
+*.m4a
+temp_audio.*
+
+# -------------------------
+# Vite cache
+# -------------------------
+.vite/
+.vscode/        # 🔥 (개발환경 설정파일)
+.idea/          # 🔥 JetBrains 계열 IDE 폴더
+
+# -------------------------
+# Logs
+# -------------------------
+*.log           # 🔥 vite, npm, backend 로그파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# Python virtualenv
+# -------------------------
+venv/           # 🔥 로컬 venv 사용 시
+.venv/          # 🔥
+
+# -------------------------
+# Frontend Static Output
+# -------------------------
+frontend/dist/  # 🔥 혹은 root dist/ 이미 있음
+
+# -------------------------
+# Miscellaneous
+# -------------------------
+*.sqlite        # 🔥 (로컬 sqlite DB 사용 시)
+*.db            # 🔥
+
+# STT model
+stt/model/
+vosk-model-small-ko-0.22/
+vosk-model-small-ko-0.22.zip
+*.zip
+
+public/
+
+backend/yolo/
+backend/artworks.db
 
 
-nlp/*.pt
-nlp/__pycache__/
-backend/
+nlp/intent_classifier.pt
+nlp/intent_classifier_best.pt
+backend/yolo/yolov8n.pt
