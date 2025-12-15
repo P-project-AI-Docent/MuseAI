@@ -64,7 +64,6 @@ export default function App() {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
-  
 
   // =======================================================
   // 유사 작품 → 새로운 QnA
@@ -86,36 +85,10 @@ export default function App() {
       setState("chat");
     };
 
+
     window.addEventListener("openArtworkFromChat", handler);
     return () => window.removeEventListener("openArtworkFromChat", handler);
   }, []);
-
-  // =======================================================
-  // 🔥 전체 설명 / 또는 채팅 들어가면 스캔 완전 정지
-  // =======================================================
-  useEffect(() => {
-    const stopHandler = () => {
-      console.log("📌 stopScanning 이벤트 수신 → 스캔 중지");
-
-      // LiveScanMode에서 쓰고 있는 scanning state 끔
-      setState((prev) => {
-        // 만약 livescan에 있었으면 camera로 돌려보내도 됨
-        // 단, 현재 흐름에서는 단순히 state 강제 이동 없이 scanning만 멈추면 됨
-        return prev;
-      });
-
-      // 카메라 스트림 정지
-      const video = document.querySelector("video");
-      if (video?.srcObject) {
-        const tracks = (video.srcObject as MediaStream).getTracks();
-        tracks.forEach((t) => t.stop());
-      }
-    };
-
-    window.addEventListener("stopScanning", stopHandler);
-    return () => window.removeEventListener("stopScanning", stopHandler);
-  }, []);
-
 
   // =======================================================
   // 갤러리 업로드
