@@ -108,3 +108,6 @@ backend/artworks.db
 nlp/intent_classifier.pt
 nlp/intent_classifier_best.pt
 backend/yolo/yolov8n.pt
+nlp/*.pt
+
+aidocent/
